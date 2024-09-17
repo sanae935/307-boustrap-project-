@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-4">
         <header class="d-flex justify-content-between py-3 border-bottom">
             <h1>User Profile</h1>
             <nav>
-                <a href="#" class="btn btn-link">Home</a>
-                <a href="#" class="btn btn-link">Profile</a>
+                <a href="index.html" class="btn btn-link">Home</a>
+                <a href="user.html" class="btn btn-link">Profile</a>
                 <a href="#" class="btn btn-link">Settings</a>
                 <a href="#" class="btn btn-danger">Logout</a>
             </nav>
@@ -43,9 +48,26 @@
                     <div class="card-body">
                         <h5 class="card-title">Update Profile</h5>
                         <form>
-                            <div class="form-group
-
-
-
-
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter new password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                            <button type="button" class="btn btn-secondary">Cancel</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 
